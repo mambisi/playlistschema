@@ -1,0 +1,84 @@
+{
+    "type": "object",
+    "properties": {
+        "playlistName": {
+            "type": "string",
+            "minLength": 3,
+            "maxLength": 255
+        },
+        "playlistId": {
+            "type": "string"
+        },
+        "audioUrl": {
+            "type": "string"
+        },
+        "songs": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "title": {
+                        "type": "string"
+                    },
+                    "artist": {
+                        "type": "string"
+                    },
+                    "coverImage": {
+                        "type": "string"
+                    },
+                    "itunes": {
+                        "type": "string"
+                    },
+                    "spotify": {
+                        "type": "string"
+                    },
+                    "deezer": {
+                        "type": "string"
+                    },
+                    "soundcloud": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "title",
+                    "artist",
+                    "coverImage"
+                ]
+            }
+        },
+        "artist": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "bannerImage": {
+                        "type": "string"
+                    },
+                    "twitter": {
+                        "type": "string"
+                    },
+                    "snapchat": {
+                        "type": "string"
+                    },
+                    "bio": {
+                        "type": "string",
+                        "maxLength": 200
+                    },
+                    "instagram": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    },
+    "required": [
+        "playlistName",
+        "playlistId",
+        "audioUrl",
+        "songs",
+        "artist"
+    ]
+}

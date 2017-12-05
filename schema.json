@@ -37,6 +37,9 @@
                     },
                     "soundcloud": {
                         "type": "string"
+                    },
+                    "markerPoint": {
+                        "type": "integer"
                     }
                 },
                 "required": [
@@ -46,7 +49,7 @@
                 ]
             }
         },
-        "artist": {
+        "artists": {
             "type": "array",
             "items": {
                 "type": "object",
@@ -79,6 +82,7 @@
         "playlistId",
         "audioUrl",
         "songs",
-        "artist"
+        "artists"
     ]
 }
+

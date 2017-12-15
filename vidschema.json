@@ -1,0 +1,29 @@
+{
+    "type": "object",
+    "properties": {
+        "title": {
+            "type": "string",
+            "minLength": 3,
+            "maxLength": 255
+        },
+        "videoUrl": {
+            "type": "string"
+        },
+        "id": {
+            "type": "string"
+        },
+        "coverUrl": {
+            "type": "string"
+        },
+        "desc": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "title",
+        "videoUrl",
+        "id",
+        "coverUrl",
+        "desc"
+    ]
+}
